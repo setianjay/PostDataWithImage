@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jenis_kecelakaan">
+        <item>Pilih jenis kecelakaan</item>
+        <item>Kecelakaan Tunggal</item>
+        <item>Kecelakaan 2 Kendaraan</item>
+        <item>Kecelakaan Beruntun</item>
+    </string-array>
+
+    <string-array name="list_jalan">
+        <item>Pilih jalan</item>
+        <item>Jalan Margonda Raya</item>
+        <item>Jalan Ir. H. Juanda</item>
+        <item>Jalan Nusantara</item>
+        <item>Jalan Dewi Sartika</item>
+        <item>Jalan Pramuka Raya</item>
+        <item>Jalan Cipayung Raya</item>
+        <item>Jalan Sawangan</item>
+        <item>Jalan Pancoran Mas</item>
+    </string-array>
+</resources>

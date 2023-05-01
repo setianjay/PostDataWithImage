@@ -1,18 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp"
+    tools:context=".presentation.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/iv_bukti_foto"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/no_image"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="@string/bukti_foto" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/ambil_photo" />
+
+        <TextView
+            android:id="@+id/lbl_id_pelapor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reporting_id"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_id_pelapor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/masukan_id_pelapor_disini"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/lbl_nama_pelapor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_pelapor"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_nama_pelapor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/masukan_nama_pelapor_disini"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <TextView
+            android:id="@+id/lbl_lokasi_kejadian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lokasi_kejadian"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_lokasi_kejadian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/list_jalan"
+            android:contentDescription="@string/list_lokasi_kejadian"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/lbl_jenis_kecelakaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jenis_kecelakaan"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_jenis_kecelakaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/jenis_kecelakaan"
+            android:contentDescription="@string/list_jenis_kecelakaan"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/lbl_waktu_kejadian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/waktu_kejadian"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_waktu_kejadian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/masukan_waktu_kejadian"
+            android:importantForAutofill="no"
+            android:inputType="time"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+        <TextView
+            android:id="@+id/lbl_notelp_pelapor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_telpon"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_notelp_pelapor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/masukan_nomor_telpon_pelapor"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:minHeight="48dp"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_lapor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/lapor" />
+    </LinearLayout>
+
+</ScrollView>

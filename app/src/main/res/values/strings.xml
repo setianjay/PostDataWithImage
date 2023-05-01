@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">PostDataAndImageExample</string>
+    <string name="reporting_id">ID Pelapor</string>
+    <string name="masukan_id_pelapor_disini">Masukan id pelapor disini</string>
+    <string name="nama_pelapor">Nama Pelapor</string>
+    <string name="masukan_nama_pelapor_disini">Masukan nama pelapor disini</string>
+    <string name="jenis_kecelakaan">Jenis Kecelakaan</string>
+    <string name="list_jenis_kecelakaan">List Jenis Kecelakaan</string>
+    <string name="no_telpon">No Telpon</string>
+    <string name="masukan_nomor_telpon_pelapor">Masukan nomor telpon pelapor</string>
+    <string name="lapor">Lapor</string>
+    <string name="bukti_foto">bukti foto</string>
+    <string name="ambil_photo">ambil photo</string>
+    <string name="masukan_waktu_kejadian">Masukan waktu kejadian</string>
+    <string name="waktu_kejadian">Waktu Kejadian</string>
+    <string name="list_lokasi_kejadian">list lokasi kejadian</string>
+    <string name="lokasi_kejadian">Lokasi Kejadian</string>
+
+    <!-- input -->
+    <string name="input_empty">%s tidak boleh kosong</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.setianjay.postdataandimageexample.di.initial
+package com.setianjay.postdataandimageexample.di
 
 import com.setianjay.postdataandimageexample.BuildConfig
 import dagger.Module

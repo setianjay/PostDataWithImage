@@ -1,7 +1,7 @@
 package com.setianjay.postdataandimageexample.application
 
 import android.app.Application
-import com.setianjay.postdataandimageexample.di.initial.InitialApp
+import com.setianjay.postdataandimageexample.di.InitialApp
 import dagger.hilt.android.HiltAndroidApp
 import javax.inject.Inject
 
